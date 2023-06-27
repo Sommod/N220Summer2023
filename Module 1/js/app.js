@@ -1,9 +1,11 @@
 /*
  * Name: Josh Moore
- * Assignment: ASSIGNMENT
- * Date: DATE
- * Description:
- * Log: LOG
+ * Assignment: Personal Composition
+ * Date: 06 June 2023
+ * Description: Create a simple decorative picture
+ * Log:
+ * - 06 June 2023:
+ *      Added Circle, Rect, Fill, and Stroke methods to create minimal shapes
  */
 
 /**
@@ -21,5 +23,17 @@ function setup() {
  * @description Function used for using different P5 methods for creating abstract drawings using JS.
  */
 function draw() {
-    //TODO: Use method to create different items for drawings
+    // Variables
+    var backgroundColor = "#156B54";
+
+    // Set background color
+    background(backgroundColor);
+
+    // Create circle, adjust color
+    clear();
+
+    stroke("#568333");
+    strokeWeight(10)
+    fill("red");
+    circle(100, 100, 50);
 }
