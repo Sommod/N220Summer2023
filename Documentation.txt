@@ -1,5 +1,5 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 2 Page: https://Sommod.github.io/N220Summer2023/Module%203/index.html
+Link to Module 3 Page: https://Sommod.github.io/N220Summer2023/Module%203/index.html
 
 This assignment I had fairly easy due to already understanding loops and how they work.
 As such I didn't need to look and refer to any information for logic. I did need to reference
