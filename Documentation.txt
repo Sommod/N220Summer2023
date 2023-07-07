@@ -1,8 +1,7 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 2 Page: https://Sommod.github.io/N220Summer2023/Module%202/index.html
+Link to Module 2 Page: https://Sommod.github.io/N220Summer2023/Module%203/index.html
 
-When completing this assignment, the main problem I had was understanding that the function "Draw"
-is called continuouesly. With this, you can draw items and objects every frame by simply having
-the methods/code within the method. As such I spent a longer time trying to figure out how to create
-a loop that would get the current frame and alter the drawing myself. I had to reference the P5 information
-about frameRate; both how it's working and how to set it.
+This assignment I had fairly easy due to already understanding loops and how they work.
+As such I didn't need to look and refer to any information for logic. I did need to reference
+the P5js reference guide again as I didn't know what the method was for square nor the
+parameters it required.
