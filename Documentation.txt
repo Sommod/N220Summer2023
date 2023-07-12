@@ -1,7 +1,10 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 3 Page: https://Sommod.github.io/N220Summer2023/Module%203/index.html
+Link to Module 4 Page: https://Sommod.github.io/N220Summer2023/Module%204/index.html
 
-This assignment I had fairly easy due to already understanding loops and how they work.
-As such I didn't need to look and refer to any information for logic. I did need to reference
-the P5js reference guide again as I didn't know what the method was for square nor the
-parameters it required.
+This assignment in general was balanced in both quickly and time consuming. The biggest problem
+I had was getting the previously drawn shapes to disappear; I had not known that simply recalling
+the 'background' method would 'remove' the previously drawn shapes. The rest of the code was easy
+enough to get to draw the shapes and to alter their location of using loops. To ensure that the array
+stays small and not continuously grow, I added remove methods to shift each array. Once the removing
+shapes was completed, the rest of the assignment came together. As usual, I had to edit the links
+after completing the assignment as they were linked to the previous module.
