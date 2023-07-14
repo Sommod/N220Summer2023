@@ -1,10 +1,9 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 4 Page: https://Sommod.github.io/N220Summer2023/Module%204/index.html
+Link to Module 4 Page: https://Sommod.github.io/N220Summer2023/Module%205/index.html
 
-This assignment in general was balanced in both quickly and time consuming. The biggest problem
-I had was getting the previously drawn shapes to disappear; I had not known that simply recalling
-the 'background' method would 'remove' the previously drawn shapes. The rest of the code was easy
-enough to get to draw the shapes and to alter their location of using loops. To ensure that the array
-stays small and not continuously grow, I added remove methods to shift each array. Once the removing
-shapes was completed, the rest of the assignment came together. As usual, I had to edit the links
-after completing the assignment as they were linked to the previous module.
+This assignment didn't pose any problems in terms of the assignment and learning of the code.
+The issue I did have was the improper placing of the Script tag. While I usually have it in
+the header, the elements of the HTML haven't loaded yet and cause an error. I wanted to keep
+the script in the header, so I added the 'defer' tag to wait until after the page is loaded.
+That solved my issue with the second task. I added some extra features (like in task 2) which
+would be a button to re-color the divs to show they are all randomly picked.
