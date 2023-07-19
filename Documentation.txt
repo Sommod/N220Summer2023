@@ -1,9 +1,14 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 5 Page: https://Sommod.github.io/N220Summer2023/Module%205/index.html
+Link to Module 6 Page: https://Sommod.github.io/N220Summer2023/Module%206/index.html
 
-This assignment didn't pose any problems in terms of the assignment and learning of the code.
-The issue I did have was the improper placing of the Script tag. While I usually have it in
-the header, the elements of the HTML haven't loaded yet and cause an error. I wanted to keep
-the script in the header, so I added the 'defer' tag to wait until after the page is loaded.
-That solved my issue with the second task. I added some extra features (like in task 2) which
-would be a button to re-color the divs to show they are all randomly picked.
+This assignment was a little tricky in a few places. The first task was simple, so I decided
+to do WAY more than I needed to. Rather than using simple If-Else statements to display the
+String representation of the Food/Energy, I decided to make Enum Classes and use those for
+determining the String value. The second assignment went without a hitch, just spent some extra
+time ensuring the enlarging and shrinking animation was done correctly based on X/Y coordinates.
+Finally, the third assignment took much longer than I had expected. The first problem I ran into
+was getting the right formula for calculating a point on a circle. I needed to go online and help
+determind the correct formula. Once that was done, the next issue I had was determining how to properly
+display each circle with the correct change in X/Y coordinate to simulate what looked like circles going
+in circles. I decided to just use simple If-Else statements for changing values, mainly because I got lazy
+and because I was running out of time for the assignment.
