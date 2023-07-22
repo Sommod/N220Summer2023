@@ -1,14 +1,49 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 6 Page: https://Sommod.github.io/N220Summer2023/Module%206/index.html
+Link to Midterm Page: https://Sommod.github.io/N220Summer2023/Midterm/index.html
 
-This assignment was a little tricky in a few places. The first task was simple, so I decided
-to do WAY more than I needed to. Rather than using simple If-Else statements to display the
-String representation of the Food/Energy, I decided to make Enum Classes and use those for
-determining the String value. The second assignment went without a hitch, just spent some extra
-time ensuring the enlarging and shrinking animation was done correctly based on X/Y coordinates.
-Finally, the third assignment took much longer than I had expected. The first problem I ran into
-was getting the right formula for calculating a point on a circle. I needed to go online and help
-determind the correct formula. Once that was done, the next issue I had was determining how to properly
-display each circle with the correct change in X/Y coordinate to simulate what looked like circles going
-in circles. I decided to just use simple If-Else statements for changing values, mainly because I got lazy
-and because I was running out of time for the assignment.
+For the length of the assignment, I was able to almost complete every event and action except for two events.
+I was unable to complete Resetting on player death (no interaction with player) and was not able to restart
+the grid when all the invaders died.
+---------------------------
+The biggest problem I had when making this assignment was getting the correct creation of all the invaders. At
+first I was going to create three separate for-loops for each row, but decided to make them all in nested for-loops
+(See LINE: 152 - 162). The issue I had at first was that each new row, the invaders' X-coordinate was offset from the
+previous one, and this included the previous row. I had to create a formula for detecting when a new row was created without
+overwriting the previous elements in the array. The formula I was able to finally get correctly was using modulus (see LINE: 179 - 181).
+This calculated the current element of the row while also retaining the correct element numerical value for the array. Using this,
+I was able to properly create the correct X-Coordinate based on the placement of the invader. Y-coordinate was easy, just multiplying
+the initial Y from Invader (0) by row by pixels.
+
+The Player was easy to make, only taking two drawn objects to create. The movement too longer to do as I didn't know
+what the functions or codes were for keyboard input. I had to go to the P5 website and lookup keyIsDown and keyIsReleased.
+Once I figured out how to use the function/variable, I needed (also provided by P5 external link) the keycode for the proper
+keys of the keyboard (WASD / UDLR arrows).
+
+The bullet was interesting, I needed to create a 'box' of the total space that the invader took and determine if the
+bullet space was within an invader's space. Creating the box had an initial problem which was I had an If-Else statement
+for both X and Y coordinate. I quickly found that the ELSE statement never hits since the X-Value always hits. As such I had
+to change the IF statement to inclue the Y-Values and ensure the Y-value minimum before calculating X. The next problem, which
+was a simple fix since I had already created a method for it should I need it. The invader once hit would no longer be drawn,
+but I never remove them from the array, as such the bullet could still interact with the non-exist invader. I have a method
+in the invader (see LINE: 272) which is 'isAlive'. If the invader is NOT alive, then the bullet will not interact with the invader
+and will instead continue until either the bullet hits the top of the canvas, or interacts with another invader.
+
+Next, when deleting the bullet, I needed to remove the bullet should the bullet hit an invader. This required me to look up
+how to remove a specific element from an array. I don't know if the first or second bullet will hit an invader, as such I needed
+to check which one hit and remove that one only. I used a website (https://sentry.io/answers/remove-specific-item-from-array/) which
+provided the methods to removing a specific element from the array while still maintaining the array.
+
+Finally, before I ran out of time, I worked on the Invader movement. The first problem was getting the correct movement of right and left.
+This was done easily by the code (See LINE: 118 - 130). The issue I encounted was not every invader was moving, only the first initial
+one. it took a moment, but originally I was planning on updating the location of the first, then updating the rest based on the
+first's location. This made me realize an issue that will happen. How to I properly get the Y-value when it changes along with
+X values. The solution was to change them all at the same time rather than to do one and update the rest (See LINE 123 - 125).
+I then used different If-Else statements to determine direction (+/- X-value based on direction) and when to move down. Each time
+the invaders reach an edge, I had the invaders move down and increase in speed.
+
+Originally I was going to have a simple array contain X/Y coordinates for the bullet, but then I realized I needed more
+methods/functions that would interact with the bullet, as such I switched to having a bullet class and having an array of 
+bullets. I was also trying to figure out how to get the movement of the invaders to be handled based on time, speed and direction.
+I had done originally three separate varibles that would handle that, but then I realized I also would need a function for
+updating the invaders. As such I decided to combine all the variables and create a invaderMovementHandler class designed just
+for moving them.
