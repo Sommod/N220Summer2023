@@ -47,3 +47,6 @@ bullets. I was also trying to figure out how to get the movement of the invaders
 I had done originally three separate varibles that would handle that, but then I realized I also would need a function for
 updating the invaders. As such I decided to combine all the variables and create a invaderMovementHandler class designed just
 for moving them.
+
+The only two Events I couldn't get to where handling player-interact-invader (player death) and resetting the grid when the
+player killed all the invaders.
