@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Task 3</title>
+		<!--<script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>-->
+		<!--<script src="https://cdjns.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>-->
+		<script src="../js/app_3.js" defer></script>
+	</head>
+
+	<body>
+		<p style="background-color: antiquewhite;">
+			Back to Homepage:<br/>
+			<button type="button" id="home" onclick="window.location.href='https://Sommod.github.io/N220Summer2023/Module%207/index.html'">Home Page</button><i>(https://Sommod.github.io/N220Summer2023/Module%207/index.html)</i><br/>
+		</p>
+	</body>
+	<div id = "display"></div><br/>
+	<label for = "userGuess">Guess: </label>
+	<input id = "userGuess" type = "number"></br>
+	<button id = "submit" type = "button" onclick = "guess(document.getElementById('userGuess').value)">Submit</button>
+</html>
