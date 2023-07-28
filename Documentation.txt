@@ -1,9 +1,11 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Midterm Page: https://Sommod.github.io/N220Summer2023/Module%207/index.html
+Link to Module 8 Page: https://Sommod.github.io/N220Summer2023/Module%208/index.html
 
-The majority of these assignments were relaxing. The biggest set of code I needed help with was the setTimeout function.
-I wanted to have the code 'wait' for a few seconds after each guess whether right or not. I needed to lookpup the code
-to use to make the code wait and change the display div after the X seconds. The website I used for getting the code was
-(https://timmousk.com/blog/javascript-wait-5-seconds/). This gave me enough information to use it how I wanted it. Once that
-was done, I realized I was changing the 'display' Div tag a lot, so I decieded to remove all the getters of getElementById and
-put it into a single function that would change the tag based on the parameter.
+Most of the assignments were relatively simple enough to follow. I did have a few moments where
+something didn't work or caused an issue. The second assignment I had a problem with selecting the
+correct numberical value from the array. When getting a random number from 0 - 3, I accidentally was
+setting the value to get a number from 1 - 4. This caused an OutOfBoundsExeption to be thrown as
+there was not 5th element within the array. A simple removal of the (+1) I had in the formula fixed
+the issue.
+For the last assignment, the only problem I had was having the direction of the circle going in the
+opposite direction; so instead of chasing the mouse, it was trying to run away.
