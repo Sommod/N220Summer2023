@@ -1,11 +1,11 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 8 Page: https://Sommod.github.io/N220Summer2023/Module%208/index.html
+Link to Module 9 Page: https://Sommod.github.io/N220Summer2023/Module%209/index.html
 
-Most of the assignments were relatively simple enough to follow. I did have a few moments where
-something didn't work or caused an issue. The second assignment I had a problem with selecting the
-correct numberical value from the array. When getting a random number from 0 - 3, I accidentally was
-setting the value to get a number from 1 - 4. This caused an OutOfBoundsExeption to be thrown as
-there was not 5th element within the array. A simple removal of the (+1) I had in the formula fixed
-the issue.
-For the last assignment, the only problem I had was having the direction of the circle going in the
-opposite direction; so instead of chasing the mouse, it was trying to run away.
+For all the assignments, the code and creation was easy. I did have to lookup how
+to clear an input tag as I had forgot how to do so. I used the website:
+(https://www.w3schools.com/howto/howto_html_clear_input.asp) to help me. Once I saw
+how to do it, I felt like an idiot and should have already known how to do so considering
+I knew how to get the value. Another item I noticed after I had already sent the code to Github,
+and am too lazy to change, for the first assignment, I could have just split the input directly
+into the array object, but instead went through each element and added them separately. This code
+was unncessary, but it still got the job done.
