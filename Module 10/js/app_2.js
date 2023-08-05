@@ -104,14 +104,12 @@ function changeColor(btnId) {
     let whichColor = getButtonId(btn);
 
     rgb[whichColor] = (inc + rgb[whichColor] <= 255) ? (inc + rgb[whichColor]) : 255;
-    console.log(asString());
     element.style.backgroundColor = "#" + asString();
 
-    console.log(element);
+    labelEl.innerHTML = "Current Color: rgb (" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
 }
 
 function asString() {
-    //return rgb[0].toString() + "" + rgb[1].toString() + "" + rgb[2].toString();
     let ret = "";
 
     if(rgb[0] < 10)
