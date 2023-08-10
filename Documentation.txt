@@ -1,11 +1,24 @@
 Link to Root: https://www.github.com/Sommod/N220Summer2023
-Link to Module 10 Page: https://Sommod.github.io/N220Summer2023/Module%2010/index.html
+Link to Final Project Page: https://Sommod.github.io/N220Summer2023/Final%20Project/index.html
 
-For the most part, the assignment was relatively easy to complete. I did however have issues with the second task.
-I had problems with getting the buttons to be made dynamically with the eventlistener added to them. The issue I had
-was incorrect synaxs for adding the event listener. After I had that issue fixed, the next issue I had was getting the
-color correct. I needed to both store and pass the RGB values, but I needed them to be in Hex form. The issue I had was
-if the value was less than 10, then the returned Hex value was only a single digit. This caused coloration problems. I
-finally fixed it by using a simple If-Else to determine if the value was below 10. If it was, then add a 0 infront of
-the value to ensure a 00-00-00 format, otherwise it can just return as itself. All in all, the second task gave me the
-bigget problems and took me longer than I had wanted.
+I was unsure as to what I wanted to do for my final project; so I ended up altering one of my previous
+modules by adding a few more in-depth and interactive actions. In this case, I decided to go back and
+use the animation of circles for this project. I keep most of the information from the module, but added
+the ability to change the color manually or automatic, the speed of the animation, speed of color changing,
+and the amount of circles are drawn. I updated the location of the circles from the previous, which looked
+like lines of circles traveling in a circle, to an actual set of cirlces traveling in a circle. Some issues
+I had were getting the KeyCodes for the Keyboard. A simple search on P5js's website provided both the numerical
+code and ASCII code. The other other problem I had was getting the correct color for randomizing to work. The
+issue was I was double setting the value. When setting the color originally, it was done through the constructor
+calling the getRandomColor() method. The issue was the double setting; I had set the COLOR variable the METHOD
+rather than setting it to a return value. Once I figured out the issue via the console stating it was VOID, I
+simply removed the setting and called the method, having the color set inside the method instead. The last big
+problem I had was the creation of new circles. I had the correct synax and whatnot, I did however have the wrong
+formula for handling the 'size' of the path the circle is to follow. I found out that the 'radius' was too big
+and being multipled bigger than it should have been. Next I used modulus, which made the circle radius too small.
+I finally figured out I needed to divide the length of the array by 4, and multiple that by default radius to
+get the correct radius of the circle path. Finally, a bug that was found, but one I kept into the program as it
+added some interesting effect was the speed of the Circles. Originally, the speed was to determine only the speed
+in which the circles traveled; However if the value is negative, it reveres the direction of the circles while still
+handling the speed correctly. This is due to the fact that the speed is lightly tied to the variable that is also
+used for direction, thus the speed also affects direction based on numerical postive or negative.
